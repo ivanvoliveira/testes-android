@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //declarações de variaveis
-    private Button botaoTrocaTela;
+    private Button botaoTrocaTela, buttonTrocaTela3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Vincula as variaveis as views do xml
         botaoTrocaTela = findViewById(R.id.button_troca_tela);
+        buttonTrocaTela3 = findViewById(R.id.button_ultima_tela);
 
         //metodo para click de troca de tela
         botaoTrocaTela.setOnClickListener(new View.OnClickListener() {
@@ -29,5 +30,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //fim do conteudo aula 1
+
+        buttonTrocaTela3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ultimaTela = new Intent(MainActivity.this, Activity3.class);
+                startActivity(ultimaTela);
+            }
+        });
     }
 }
