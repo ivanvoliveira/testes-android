@@ -11,22 +11,11 @@ import java.util.Random;
 
 public class Sorteio extends AppCompatActivity {
 
-    private Button buttonTrocaTela;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sorteio);
 
-        buttonTrocaTela = findViewById(R.id.button_sorteio_frases);
-
-        buttonTrocaTela.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent trocarTela = new Intent(Sorteio.this, Frases.class);
-                startActivity(trocarTela);
-            }
-        });
     }
 
     public void sortearNumero(View view) { //metodo alternativo de vincular função ao botão, mudando no xml
