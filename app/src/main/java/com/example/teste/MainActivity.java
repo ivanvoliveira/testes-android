@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //declarações de variaveis
-    private Button botaoTrocaTela, buttonTrocaTela3;
+    private Button botaoTrocaTela2, buttonTrocaTela3, buttonTrocaTela4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Vincula as variaveis as views do xml
-        botaoTrocaTela = findViewById(R.id.button_troca_tela);
-        buttonTrocaTela3 = findViewById(R.id.button_ultima_tela);
+        botaoTrocaTela2 = findViewById(R.id.button_activity_2);
+        buttonTrocaTela3 = findViewById(R.id.button_activity_3);
+        buttonTrocaTela4 = findViewById(R.id.button_activity_4);
 
         //metodo para click de troca de tela
-        botaoTrocaTela.setOnClickListener(new View.OnClickListener() {
+        botaoTrocaTela2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarDeTela = new Intent(MainActivity.this, Activity2.class);
-                startActivity(trocarDeTela);
+                Intent trocarTela = new Intent(MainActivity.this, Activity2.class);
+                startActivity(trocarTela);
             }
         });
         //fim do conteudo aula 1
@@ -34,8 +35,16 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ultimaTela = new Intent(MainActivity.this, Activity3.class);
-                startActivity(ultimaTela);
+                Intent trocarTela = new Intent(MainActivity.this, Activity3.class);
+                startActivity(trocarTela);
+            }
+        });
+
+        buttonTrocaTela4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocarTela = new Intent(MainActivity.this, Sorteio.class);
+                startActivity(trocarTela);
             }
         });
     }

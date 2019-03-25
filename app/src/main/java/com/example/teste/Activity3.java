@@ -1,5 +1,6 @@
 package com.example.teste;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class Activity3 extends AppCompatActivity {
 
-    private Button buttonPegaNome, buttonPegaIdade;
+    private Button buttonPegaNome, buttonPegaIdade, buttonTrocaTela4;
     private TextView textResultado;
     private EditText editTextNome, editTextIdade;
 
@@ -25,6 +26,7 @@ public class Activity3 extends AppCompatActivity {
         editTextIdade = findViewById(R.id.editText_idade);
         buttonPegaNome = findViewById(R.id.button_pega_nome);
         buttonPegaIdade = findViewById(R.id.button_pega_idade);
+        buttonTrocaTela4 = findViewById(R.id.button_activity3_4);
 
         //metodo de click para pegar o nome do edit text e jogar no text view resultado
         buttonPegaNome.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,14 @@ public class Activity3 extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Menor de idade!", Toast.LENGTH_LONG).show();
                     }
                 }
+            }
+        });
+
+        buttonTrocaTela4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocarTela = new Intent(Activity3.this, Sorteio.class);
+                startActivity(trocarTela);
             }
         });
     }

@@ -19,7 +19,7 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         //Vincula as variaveis as views do xml
-        botaoTela3 = findViewById(R.id.button_tela3);
+        botaoTela3 = findViewById(R.id.button_activity2_3);
         textoTela2 = findViewById(R.id.textView_troca);
         botaoTrocaTexto = findViewById(R.id.button_troca_texto);
 
