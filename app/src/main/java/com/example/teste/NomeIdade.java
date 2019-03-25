@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Activity3 extends AppCompatActivity {
+public class NomeIdade extends AppCompatActivity {
 
     private Button buttonPegaNome, buttonPegaIdade, buttonTrocaTela4;
     private TextView textResultado;
@@ -18,7 +18,7 @@ public class Activity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_3);
+        setContentView(R.layout.activity_nome_idade);
 
         //Vincula as variaveis as views do xml
         textResultado = findViewById(R.id.textView_resultado);
@@ -26,7 +26,7 @@ public class Activity3 extends AppCompatActivity {
         editTextIdade = findViewById(R.id.editText_idade);
         buttonPegaNome = findViewById(R.id.button_pega_nome);
         buttonPegaIdade = findViewById(R.id.button_pega_idade);
-        buttonTrocaTela4 = findViewById(R.id.button_activity3_4);
+        buttonTrocaTela4 = findViewById(R.id.button_text_sorteio);
 
         //metodo de click para pegar o nome do edit text e jogar no text view resultado
         buttonPegaNome.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +61,7 @@ public class Activity3 extends AppCompatActivity {
         buttonTrocaTela4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(Activity3.this, Sorteio.class);
+                Intent trocarTela = new Intent(NomeIdade.this, Sorteio.class);
                 startActivity(trocarTela);
             }
         });

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity3">
+    tools:context=".NomeIdade">
 
     <TextView
         android:id="@+id/textView_resultado"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_nome" />
 
     <Button
-        android:id="@+id/button_activity3_4"
+        android:id="@+id/button_text_sorteio"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Activity 4"
+        android:text="Sorteio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
