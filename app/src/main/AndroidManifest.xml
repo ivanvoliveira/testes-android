@@ -9,13 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Noticia"></activity>
-        <activity android:name=".Jokenpo" />
+        <activity
+            android:name=".Netflix"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Noticia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Jokenpo"
+            android:label="@string/activity_jokenpo" />
         <activity android:name=".Frases" />
         <activity android:name=".Sorteio" />
         <activity android:name=".NomeIdade" />
-        <activity
-            android:name=".MainActivity"><!--android:screenOrientation="portrait"-->
+        <activity android:name=".MainActivity"> <!-- android:screenOrientation="portrait" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

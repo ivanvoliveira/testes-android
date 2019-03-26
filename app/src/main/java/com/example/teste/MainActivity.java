@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //declarações de variaveis
-    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela4, buttonTrocaTela5;
+    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela2 = findViewById(R.id.button_main_sorteio);
         buttonTrocaTela4 = findViewById(R.id.button_main_jokenpo);
         buttonTrocaTela5 = findViewById(R.id.button_main_noticia);
+        buttonTrocaTela6 = findViewById(R.id.button_main_netflix);
         //declaração de variaveis e vinculação as views
         Button buttonTrocaTela3 = findViewById(R.id.button_main_frases);
 
@@ -62,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent trocarTela = new Intent(MainActivity.this, Noticia.class);
+                startActivity(trocarTela);
+            }
+        });
+
+        buttonTrocaTela6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocarTela = new Intent(MainActivity.this, Netflix.class);
                 startActivity(trocarTela);
             }
         });
