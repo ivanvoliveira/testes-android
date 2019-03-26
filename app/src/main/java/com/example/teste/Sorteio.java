@@ -21,7 +21,7 @@ public class Sorteio extends AppCompatActivity {
     public void sortearNumero(View view) { //metodo alternativo de vincular função ao botão, mudando no xml
         TextView textoResultado = findViewById(R.id.textView_numero);
         int numero = new Random().nextInt(11);
-        textoResultado.setText("O número selecionado é: " + numero);
+        textoResultado.setText("O número gerado foi: " + numero);
     }
 }
 

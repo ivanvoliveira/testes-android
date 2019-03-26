@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //declarações de variaveis
-    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela4;
+    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela4, buttonTrocaTela5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela = findViewById(R.id.button_main_text);
         buttonTrocaTela2 = findViewById(R.id.button_main_sorteio);
         buttonTrocaTela4 = findViewById(R.id.button_main_jokenpo);
+        buttonTrocaTela5 = findViewById(R.id.button_main_noticia);
         //declaração de variaveis e vinculação as views
         Button buttonTrocaTela3 = findViewById(R.id.button_main_frases);
 
@@ -53,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent trocarTela = new Intent(MainActivity.this, Jokenpo.class);
+                startActivity(trocarTela);
+            }
+        });
+
+        buttonTrocaTela5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent trocarTela = new Intent(MainActivity.this, Noticia.class);
                 startActivity(trocarTela);
             }
         });
