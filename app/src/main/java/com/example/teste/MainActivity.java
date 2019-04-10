@@ -8,70 +8,66 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    //declarações de variaveis
-    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6;
+    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela3, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6, buttonTrocaTela7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Vincula as variaveis as views do xml
-        buttonTrocaTela = findViewById(R.id.button_main_text);
+        buttonTrocaTela = findViewById(R.id.button_main_componentes);
         buttonTrocaTela2 = findViewById(R.id.button_main_sorteio);
         buttonTrocaTela4 = findViewById(R.id.button_main_jokenpo);
+        buttonTrocaTela3 = findViewById(R.id.button_main_frases);
         buttonTrocaTela5 = findViewById(R.id.button_main_noticia);
         buttonTrocaTela6 = findViewById(R.id.button_main_netflix);
-        //declaração de variaveis e vinculação as views
-        Button buttonTrocaTela3 = findViewById(R.id.button_main_frases);
 
-        //metodo para click de troca de tela
         buttonTrocaTela.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, NomeIdade.class);
-                startActivity(trocarTela);
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Componentes.class));
             }
         });
 
         buttonTrocaTela2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, Sorteio.class);
-                startActivity(trocarTela);
+               startActivity(new Intent(MainActivity.this, Sorteio.class));
             }
         });
 
         buttonTrocaTela3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, Frases.class);
-                startActivity(trocarTela);
+                startActivity(new Intent(MainActivity.this, Frases.class));
             }
         });
 
         buttonTrocaTela4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, Jokenpo.class);
-                startActivity(trocarTela);
+                startActivity(new Intent(MainActivity.this, Jokenpo.class));
             }
         });
 
         buttonTrocaTela5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, Noticia.class);
-                startActivity(trocarTela);
+                startActivity(new Intent(MainActivity.this, Noticia.class));
             }
         });
 
         buttonTrocaTela6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent trocarTela = new Intent(MainActivity.this, Netflix.class);
-                startActivity(trocarTela);
+                startActivity(new Intent(MainActivity.this, Netflix.class));
+            }
+        });
+
+        buttonTrocaTela7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Combustivel.class));
             }
         });
     }

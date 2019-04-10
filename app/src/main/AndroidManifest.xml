@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Combustivel"></activity>
+        <activity android:name=".Componentes" />
         <activity
             android:name=".Netflix"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Noticia"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -21,7 +23,6 @@
             android:label="@string/activity_jokenpo" />
         <activity android:name=".Frases" />
         <activity android:name=".Sorteio" />
-        <activity android:name=".NomeIdade" />
         <activity android:name=".MainActivity"> <!-- android:screenOrientation="portrait" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
