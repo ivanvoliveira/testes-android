@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Combustivel"></activity>
+        <activity
+            android:name=".Combustivel"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".Componentes" />
         <activity
             android:name=".Netflix"

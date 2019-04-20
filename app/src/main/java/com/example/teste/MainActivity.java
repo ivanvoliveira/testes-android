@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela3 = findViewById(R.id.button_main_frases);
         buttonTrocaTela5 = findViewById(R.id.button_main_noticia);
         buttonTrocaTela6 = findViewById(R.id.button_main_netflix);
+        buttonTrocaTela7 = findViewById(R.id.button_main_componentes);
 
         buttonTrocaTela.setOnClickListener(new View.OnClickListener() {
             @Override
