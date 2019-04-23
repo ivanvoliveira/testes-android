@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela3, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6, buttonTrocaTela7;
+    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela3, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6, buttonTrocaTela8, buttonTrocaTela7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela3 = findViewById(R.id.button_main_frases);
         buttonTrocaTela5 = findViewById(R.id.button_main_noticia);
         buttonTrocaTela6 = findViewById(R.id.button_main_netflix);
-        buttonTrocaTela7 = findViewById(R.id.button_main_componentes);
+        buttonTrocaTela7 = findViewById(R.id.button_main_combustivel);
+        buttonTrocaTela8 = findViewById(R.id.button_main_switch);
 
         buttonTrocaTela.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, Componentes.class));
+                startActivity(new Intent(MainActivity.this, Gorjeta.class));
             }
         });
 
@@ -69,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Combustivel.class));
+            }
+        });
+
+        buttonTrocaTela8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SwitchToggle.class));
             }
         });
     }

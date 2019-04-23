@@ -3,85 +3,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".Componentes"
-    android:layout_margin="16dp">
+    tools:context=".Componentes">
 
-    <android.support.design.widget.TextInputLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/editText_produto"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nome do produto"
-            android:layout_margin="5dp"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cores" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/checkBox_branco"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Branco" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editText_produto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Nome do produto" />
+            </android.support.design.widget.TextInputLayout>
 
-    <CheckBox
-        android:id="@+id/checkBox_verde"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Verde" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cores" />
 
-    <CheckBox
-        android:id="@+id/checkBox_vermelho"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Vermelho" />
+            <CheckBox
+                android:id="@+id/checkBox_branco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branco" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Disponível em estoque" />
+            <CheckBox
+                android:id="@+id/checkBox_verde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verde" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup_estoque"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/checkBox_vermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vermelho" />
 
-        <RadioButton
-            android:id="@+id/radioButton_sim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sim" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disponível em estoque" />
 
-        <RadioButton
-            android:id="@+id/radioButton_nao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Não" />
-    </RadioGroup>
+            <RadioGroup
+                android:id="@+id/radioGroup_estoque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_componentes_enviar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:onClick="verificaRadio"
-        android:text="Enviar" />
+                <RadioButton
+                    android:id="@+id/radioButton_sim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sim" />
 
-    <TextView
-        android:id="@+id/textView_resultado_produto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Resultado"
-        android:layout_margin="5dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton_nao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Não" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_componentes_enviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="verificaCheck"
+                android:text="Enviar" />
+
+            <TextView
+                android:id="@+id/textView_resultado_produto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Resultado" />
+
+            <Button
+                android:id="@+id/bt_toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="toast"
+                android:text="Teste Toast" />
+
+            <Button
+                android:id="@+id/bt_alert_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="alert"
+                android:text="Teste Alert Dialog" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:max="100" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:onClick="carregarProgress"
+                android:text="Carregar" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="O quão divertido você é?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 a 10" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="10" />
+
+            <TextView
+                android:id="@+id/tv_resultado_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
