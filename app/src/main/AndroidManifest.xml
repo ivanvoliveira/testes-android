@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gorjeta"></activity>
+        <activity android:name=".ResultadoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CaraCoroa"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityDados" />
+        <activity android:name=".PassarDados" />
+        <activity android:name=".Gorjeta" />
         <activity android:name=".SwitchToggle" />
         <activity
             android:name=".Combustivel"

@@ -1,129 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:orientation="vertical"
+    android:layout_margin="10dp">
 
-    <android.support.constraint.ConstraintLayout
+    <TextView
+        android:id="@+id/textView_activity_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity 1"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/button_main_sorteio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:text="Sorteio" />
 
-        <TextView
-            android:id="@+id/textView_activity_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Activity 1"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button_main_frases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frases" />
 
-        <Button
-            android:id="@+id/button_main_componentes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="8dp"
-            android:text="Componentes"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_activity_1" />
+    <Button
+        android:id="@+id/button_main_jokenpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jokenpo" />
 
-        <Button
-            android:id="@+id/button_main_sorteio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Sorteio"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_componentes" />
+    <Button
+        android:id="@+id/button_main_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noticia" />
 
-        <Button
-            android:id="@+id/button_main_frases"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Frases"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_sorteio" />
+    <Button
+        android:id="@+id/button_main_netflix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Netflix" />
 
-        <Button
-            android:id="@+id/button_main_jokenpo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Jokenpo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_frases" />
+    <Button
+        android:id="@+id/button_main_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch Toggle" />
 
-        <Button
-            android:id="@+id/button_main_noticia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Noticia"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_jokenpo" />
+    <Button
+        android:id="@+id/button_main_combustivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Combustivel" />
 
-        <Button
-            android:id="@+id/button_main_netflix"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Netflix"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_noticia" />
+    <Button
+        android:id="@+id/button_main_componentes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Componentes" />
 
-        <Button
-            android:id="@+id/button_main_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="8dp"
-            android:text="Switch Toggle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_main_netflix" />
+    <Button
+        android:id="@+id/button_main_gorjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gorjeta" />
 
-        <Button
-            android:id="@+id/button_main_combustivel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="8dp"
-            android:text="Combustivel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_activity_1" />
+    <Button
+        android:id="@+id/button_main_ciclo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciclo" />
 
-    </android.support.constraint.ConstraintLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/button_main_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Passar Dados" />
+
+    <Button
+        android:id="@+id/button_main_cara_coroa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cara ou Coroa" />
+</LinearLayout>
