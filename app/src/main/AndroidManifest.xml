@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".CaraCoroa"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FloatButton"
+            android:label="@string/title_activity_float_button"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Snack" />
+        <activity
+            android:name=".ResultadoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CaraCoroa"
+            android:screenOrientation="portrait" />
         <activity android:name=".ActivityDados" />
         <activity android:name=".PassarDados" />
         <activity android:name=".Gorjeta" />
