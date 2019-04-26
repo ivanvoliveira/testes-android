@@ -109,6 +109,18 @@
                 android:layout_height="wrap_content"
                 android:text="Float Button" />
 
+            <Button
+                android:id="@+id/button_main_preferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preferencias do Usuario" />
+
+            <Button
+                android:id="@+id/button_main_sqlite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQLite" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

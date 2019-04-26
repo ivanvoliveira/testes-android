@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SQLite"></activity>
+        <activity android:name=".PreferenciasDoUsuario" />
         <activity
             android:name=".FloatButton"
             android:label="@string/title_activity_float_button"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Snack" />
         <activity
             android:name=".ResultadoActivity"

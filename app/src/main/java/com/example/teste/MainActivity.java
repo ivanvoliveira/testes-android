@@ -9,7 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela3, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6, buttonTrocaTela8, buttonTrocaTela7, buttonTrocaTela9, buttonTrocaTela10, buttonTrocaTela11, buttonTrocaTela12, buttonTrocaTela13;
+    private Button buttonTrocaTela, buttonTrocaTela2, buttonTrocaTela3, buttonTrocaTela4, buttonTrocaTela5, buttonTrocaTela6, buttonTrocaTela8, buttonTrocaTela7, buttonTrocaTela9,
+            buttonTrocaTela10, buttonTrocaTela11, buttonTrocaTela12, buttonTrocaTela13, buttonTrocaTela14, buttonTrocaTela15;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         buttonTrocaTela11 = findViewById(R.id.button_main_cara_coroa);
         buttonTrocaTela12 = findViewById(R.id.button_main_snack);
         buttonTrocaTela13 = findViewById(R.id.button_main_float);
+        buttonTrocaTela14 = findViewById(R.id.button_main_preferencias);
+        buttonTrocaTela15 = findViewById(R.id.button_main_sqlite);
 
         buttonTrocaTela.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +123,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, FloatButton.class));
+            }
+        });
+
+        buttonTrocaTela14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PreferenciasDoUsuario.class));
+            }
+        });
+
+        buttonTrocaTela15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SQLite.class));
             }
         });
     }
